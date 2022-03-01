@@ -1,0 +1,163 @@
+body {
+  font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth;
+}
+
+#required{
+    color: red;
+}
+.navbar {
+  position: fixed;
+  /* background-color:#0C224C ; */
+  width: 100%;
+}
+.navbar-brand img {
+  width: 160px;
+  height: auto;
+}
+section {
+  background-color: #65b32e;
+  height: 100vh;
+  background-image: url(./Assets/InXpress-Arrow-Blue.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: -640px center;
+}
+.FormContMain {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#box {
+  background-color: #eceae6;
+  padding: 30px;
+  border-radius: 10px;
+  font-weight: 400;
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+input {
+  /* width: 50%; */
+  background-color: transparent;
+  outline: 0;
+  border: 0px;
+  border-bottom: 2px solid black;
+  margin-left: 10px;
+}
+input:hover,
+input:focus {
+  border-bottom: 2px solid #65b32e;
+}
+#btnSubmit {
+  background-color: #65b32e;
+  color: white;
+  border: 0;
+  width: 30%;
+  border-radius: 20px;
+  padding: 3px 3px;
+  align-self: flex-end;
+  margin-top: 16px;
+}
+.flex2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 5px 0;
+}
+#quote{
+    font-family: "Kalam";
+    font-size: 35px;
+    padding-left: 24px;
+}
+
+#arrow{
+    position: absolute;
+    left: 740px;
+    width: 300px;
+    height: auto;
+}
+
+
+   
+/* --------------------------------------------*/
+@media only screen and (max-width: 567px) {
+  section {
+    height: 100vh;
+    background-color: #65b32e;
+    background-image: url(./Assets/Bg-2.png);
+    background-position: center -330px;
+  }
+  .FormContMain {
+    height: 47vh;
+  }
+  .navbar {
+    position: relative;
+    background-color: #0c224c;
+  }
+
+  .flex2 {
+    flex-direction: column;
+  }
+  input {
+    margin-left: 0;
+  }
+  .navbar-brand img {
+    width: 130px;
+  }
+  #box{
+      padding: 20px;
+      width: 85%;
+      margin-top: 40px;
+      margin-bottom: 20px;
+  }
+  #btnSubmit {
+      font-size: 18px;
+    padding: 6px 15px;
+  }
+  .divform {
+    margin-top: 50px;
+   }
+   .divquote{
+       flex-direction: column;
+   }
+ #arrow{
+    width: 200px;
+    transform: rotate(60deg);
+    position: relative;
+    left: 0;
+    top: 32px;
+    margin-bottom: 0px;
+ }
+ #quote{
+     font-size: 28px;
+     text-align: center;
+     padding-left: 0;
+     margin-top: 0px;
+     padding-top: 58px;
+ }
+
+}
+
+@media only screen and (min-width: 567px) and (max-width: 768px) {
+  section {
+    background-color: #65b32e;
+    background-image: url(./Assets/Bg-2.png);
+    background-position: center -1000px;
+  }
+  .navbar {
+    /* position: fixed; */
+    background-color: #0c224c;
+  }
+  #box {
+    margin-top: 150px;
+  }
+  input {
+    margin-left: 0;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+}
